@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["*"]
     }
-  }
+  },
+  "exclude": ["node_modules", ".next"],
+  "types": ["@types/d3-geo"]
 }
