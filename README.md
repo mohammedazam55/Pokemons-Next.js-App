@@ -15,11 +15,11 @@
 
 ### Homepage
 
-![Example Image](./screenshots/homepage.png "This is an example image")
+![Example Image](./screenshots/1.png "This is an example image")
 
 ### Details Page
 
-![Example Image](./screenshots/detailed-page.png "This is an example image")
+![Example Image](./screenshots/2.png "This is an example image")
 
 Views Count: [![Views](https://views.whatilearened.today/views/github/mohammedazam55/MohammedAzam-Frontend-Developer.svg)](https://views.whatilearened.today/views/github/mohammedazam55/MohammedAzam-Frontend-Developer)
 
