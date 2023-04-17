@@ -15,18 +15,12 @@
 
 ### Homepage
 
-![Example Image](./screenshots/1.png "This is an example image")
+![Example Image](./screenshots/homepage.png "This is an example image")
 
 ### Details Page
 
-![Example Image](./screenshots/2.png "This is an example image")
+![Example Image](./screenshots/detailed-page.png "This is an example image")
 
-Views Count: [![Views](https://views.whatilearened.today/views/github/mohammedazam55/MohammedAzam-Frontend-Developer.svg)](https://views.whatilearened.today/views/github/mohammedazam55/MohammedAzam-Frontend-Developer)
+Views Count: [![Views](https://views.whatilearened.today/views/github/mohammedazam55/Pokemons-App.svg)](https://views.whatilearened.today/views/github/mohammedazam55/Pokemons-App)
 
-Pulls Count: [![Pulls](https://img.shields.io/github/issues-pr/mohammedazam55/MohammedAzam-Frontend-Developer)](https://img.shields.io/github/issues-pr/mohammedazam55/MohammedAzam-Frontend-Developer)
-
-[![Views Count This Week](https://views.whatilearened.today/views/github/{username}/{repository-name}/week.svg)](https://views.whatilearened.today/views/github/{username}/{repository-name}/week)
-[![Views Count This Month](https://views.whatilearened.today/views/github/{username}/{repository-name}/month.svg)](https://views.whatilearened.today/views/github/{username}/{repository-name}/month)
-
-[![Pulls Count This Week](https://img.shields.io/github/issues-pr/{username}/{repository-name}/week)](https://img.shields.io/github/issues-pr/{username}/{repository-name}/week)
-[![Pulls Count This Month](https://img.shields.io/github/issues-pr/{username}/{repository-name}/month)](https://img.shields.io/github/issues-pr/{username}/{repository-name}/month)
+Pulls Count: [![Pulls](https://img.shields.io/github/issues-pr/mohammedazam55/Pokemons-App)](https://img.shields.io/github/issues-pr/mohammedazam55/Pokemons-App)
