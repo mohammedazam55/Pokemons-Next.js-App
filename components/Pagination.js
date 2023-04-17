@@ -1,8 +1,8 @@
 import { useContext, useCallback, useEffect, useState } from "react";
-import AppContext from "@/pages/AppContext";
+import AppContext from "@/components/AppContext";
 import { gql } from "@apollo/client";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
-import client from "@/pages/lib/apolloClient";
+import client from "@/components/apolloClient";
 //
 function Pagination() {
   const { setCurrentPage, currentPage, initialPokemons, setGridsToDisplay } =

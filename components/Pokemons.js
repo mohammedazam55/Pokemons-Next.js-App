@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
-import AppContext from "@/pages/AppContext";
+import AppContext from "@/components/AppContext";
 import { typeColors } from "@/pages";
 
 function Pokemons() {

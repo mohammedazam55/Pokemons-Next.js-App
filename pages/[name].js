@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useQuery, gql } from "@apollo/client";
 import Image from "next/image";
 import Layout from "@/components/Layout";
-import client from "@/pages/lib/apolloClient";
+import client from "@/components/apolloClient";
 import { useState } from "react";
 import { typeColors } from "@/pages";
 
@@ -155,7 +155,7 @@ export default function Pokemon() {
                             className="flex flex-col items-center justify-center"
                           >
                             <Image
-                              className="mb-4 h-48 w-full rounded-lg object-contain"
+                              className="mb-4 rounded-lg object-contain"
                               src={evolution.image}
                               alt={evolution.name}
                               width={300}
@@ -181,7 +181,7 @@ export default function Pokemon() {
                         ))}
                       </div>
                     ) : (
-                      <p className="text-bold mb-2 text-center text-xl sm:text-sm">
+                      <p className="text-bold mb-2 py-4 text-center text-xl sm:text-sm">
                         Not Found
                       </p>
                     )}

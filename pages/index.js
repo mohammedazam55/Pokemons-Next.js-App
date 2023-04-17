@@ -2,11 +2,12 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import { gql } from "@apollo/client";
-import AppContext from "./AppContext";
-import client from "./lib/apolloClient";
+import AppContext from "../components/AppContext";
+import client from "../components/apolloClient";
 import Pokemons from "@/components/Pokemons";
 import Pagination from "@/components/Pagination";
 import Layout from "@/components/Layout";
+import { ApolloProvider } from "@apollo/client";
 
 //
 
@@ -33,6 +34,7 @@ export async function getStaticProps() {
       query GetMorePokemons {
         pokemons(first: 20) {
           name
+          number
           image
           height {
             minimum
@@ -66,15 +68,12 @@ export async function getStaticProps() {
   revalidate: 1;
 }
 
-function HomePage({ initialPokemons }) {
+function HomePage({ initialPokemons, morePokemons }) {
   // pagination
   const [currentPage, setCurrentPage] = useState(1);
   const [gridsToDisplay, setGridsToDisplay] = useState([]);
   return (
-    <div>
-      <Head>
-        <title>My Pokemon App</title>
-      </Head>
+    <ApolloProvider client={client}>
       <AppContext.Provider
         value={{
           currentPage,
@@ -82,14 +81,20 @@ function HomePage({ initialPokemons }) {
           gridsToDisplay,
           setGridsToDisplay,
           initialPokemons,
+          morePokemons,
         }}
       >
-        <Layout>
-          <Pokemons />
-          <Pagination />
-        </Layout>
+        <div>
+          <Head>
+            <title>My Pokemon App</title>
+          </Head>
+          <Layout>
+            <Pokemons />
+            <Pagination />
+          </Layout>
+        </div>
       </AppContext.Provider>
-    </div>
+    </ApolloProvider>
   );
 }
 export const typeColors = {
